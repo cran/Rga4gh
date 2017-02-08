@@ -32,7 +32,7 @@
 #'
 #' @export
 
-ga4gh_client <- function(server, port = NULL, api_location = "/ga4gh", log_level = 0, authentication_key = "", page_size = 10) {
+ga4gh_client <- function(server, port = NULL, api_location = "", log_level = 0, authentication_key = "", page_size = 10) {
   api_url <- server
   if(!is.null(port)) {
     api_url <- paste0(api_url, ":", port)
